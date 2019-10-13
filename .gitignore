@@ -1,0 +1,9 @@
+*.csv
+*.npy
+*.model
+*.wv
+data/*
+cache/*
+outputs/*
+reports/*
+__pycache__/*
