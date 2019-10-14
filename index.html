@@ -13280,10 +13280,37 @@ a.anchor-link {
 <h2 id="Terminology">Terminology<a class="anchor-link" href="#Terminology">&#182;</a></h2><h3 id="Buzzwords">Buzzwords<a class="anchor-link" href="#Buzzwords">&#182;</a></h3><ul>
 <li><strong>Artificial Intelligence</strong>: Figuring out how to do human things with computers</li>
 <li><strong>Machine Learning</strong>: A set of approaches/algorithms which aim to find (potenitally complex) patterns in data</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Terminology">Terminology<a class="anchor-link" href="#Terminology">&#182;</a></h2><h3 id="Buzzwords">Buzzwords<a class="anchor-link" href="#Buzzwords">&#182;</a></h3><ul>
 <li><strong>Supervised Marchine Learning</strong>: Trying to find patterns in input data $X$ which do a good job at predicting output data $Y$. Typically, "trained" on 80% of full dataset and evaluated (tested) on 20%. In NLP, document classification is most prominent example.</li>
 <li><strong>Unsupervised Machine Learning</strong>: Trying to find patterns in input data $X$ full stop. For example, find clusters of data points. In NLP, topic modelling is most prominent example.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Terminology">Terminology<a class="anchor-link" href="#Terminology">&#182;</a></h2><h3 id="Buzzwords">Buzzwords<a class="anchor-link" href="#Buzzwords">&#182;</a></h3><ul>
 <li><strong>Neural Network</strong>: A machine learning algorithm which learns a mapping between input and output via a series of "layers" (matrix multiplications of inputs with a weight matrix to produce outputs) connected non-linearly in a network</li>
 <li><strong>Deep Learning</strong>: Machine learning with a neural network...</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Terminology">Terminology<a class="anchor-link" href="#Terminology">&#182;</a></h2><h3 id="Buzzwords">Buzzwords<a class="anchor-link" href="#Buzzwords">&#182;</a></h3><ul>
 <li><strong>Natural Language Processing (NLP)</strong>: Any of the above applied specifically to <em>language</em> data, i.e, text. Thus sometimes called "Compuatational Linguistics", "Text Analysis", "Text-as-Data", etc... NLP is the term used in CS, which trickles out to the rest, so I'll stick with NLP. It can be further broken down into (the "old school" and "new school", respectively, to oversimplify a lot):<ul>
 <li><strong>Statistical NLP</strong>: Was pretty much the only NLP from the field's founding until fairly recently -- using statistical models of language to make inferences from linguistic data (aka text)</li>
 <li><strong>Neural NLP</strong>: Though neural networks have been around since the 1950s, recently some absurdly huge breakthroughs have been made by applying them to problems in NLP, making this the current "standard" type of NLP (hence Stanford changing the name of its NLP class to "Deep Learning for NLP"... after I left
@@ -13296,11 +13323,11 @@ Within social science, the most popular NLP technologies are:</li>
 
 </div>
 </div>
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="NLP-Tasks">NLP Tasks<a class="anchor-link" href="#NLP-Tasks">&#182;</a></h3><ul>
+<h2 id="Terminology">Terminology<a class="anchor-link" href="#Terminology">&#182;</a></h2><h3 id="NLP-Tasks">NLP Tasks<a class="anchor-link" href="#NLP-Tasks">&#182;</a></h3><ul>
 <li><strong>Document Classification</strong>: I want to label a set of documents</li>
 <li><strong>Named Entity Recognition</strong>: I want to find people/places/events/things mentioned in a set of documents</li>
 <li><strong>Sentiment Analysis</strong>: I want to get a sense of whether a set of documents is talking about a person/place/event/thing in a positive or negative light</li>
@@ -13347,13 +13374,20 @@ Within social science, the most popular NLP technologies are:</li>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 </pre></div>
 <p>at the beginning of my Python files, even if I never end up using them.</p>
-<h3 id="Bokeh-(https://bokeh.pydata.org/en/latest/index.html)-or-Seaborn-(https://seaborn.pydata.org/)">Bokeh (<a href="https://bokeh.pydata.org/en/latest/index.html">https://bokeh.pydata.org/en/latest/index.html</a>) or Seaborn (<a href="https://seaborn.pydata.org/">https://seaborn.pydata.org/</a>)<a class="anchor-link" href="#Bokeh-(https://bokeh.pydata.org/en/latest/index.html)-or-Seaborn-(https://seaborn.pydata.org/)">&#182;</a></h3><p>You'll see a lot of visualization tutorials using <code>matplotlib</code> -- Seaborn provides a more high-level interface to mpl that is far more natural for social science people used to Stata/R/<code>ggplot2</code>, while Bokeh is nice in that it's integrated with Pandas and NumPy (it's made by the same team as NumPy). I'm personally leaning towards Bokeh because I need interactivity in my plots/visualizations, but Seaborn may be an easier place to start, especially if you don't need interactive plots</p>
 <h3 id="Apache-OpenOffice-Calc-(https://www.openoffice.org/product/calc.html)">Apache OpenOffice Calc (<a href="https://www.openoffice.org/product/calc.html">https://www.openoffice.org/product/calc.html</a>)<a class="anchor-link" href="#Apache-OpenOffice-Calc-(https://www.openoffice.org/product/calc.html)">&#182;</a></h3><p>I STRONGLY RECOMMEND NOT USING EXCEL FOR NLP STUFF -- Excel doesn't (easily) support UTF-8 (Unicode) standard, OpenOffice does by default. Also open source, which is cool.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="(Honorable-Mentions----Throw-Them-In-Your-Toolkit)">(Honorable Mentions -- Throw Them In Your Toolkit)<a class="anchor-link" href="#(Honorable-Mentions----Throw-Them-In-Your-Toolkit)">&#182;</a></h2><h3 id="Bokeh-(https://bokeh.pydata.org/en/latest/index.html)-or-Seaborn-(https://seaborn.pydata.org/)">Bokeh (<a href="https://bokeh.pydata.org/en/latest/index.html">https://bokeh.pydata.org/en/latest/index.html</a>) or Seaborn (<a href="https://seaborn.pydata.org/">https://seaborn.pydata.org/</a>)<a class="anchor-link" href="#Bokeh-(https://bokeh.pydata.org/en/latest/index.html)-or-Seaborn-(https://seaborn.pydata.org/)">&#182;</a></h3><p>You'll see a lot of visualization tutorials using <code>matplotlib</code> -- Seaborn provides a more high-level interface to mpl that is far more natural for social science people used to Stata/R/<code>ggplot2</code>, while Bokeh is nice in that it's integrated with Pandas and NumPy (it's made by the same team as NumPy). I'm personally leaning towards Bokeh because I need interactivity in my plots/visualizations, but Seaborn may be an easier place to start, especially if you don't need interactive plots</p>
 <h3 id="PyTorch-(https://pytorch.org/)-or-TensorFlow-(https://www.tensorflow.org/)">PyTorch (<a href="https://pytorch.org/">https://pytorch.org/</a>) or TensorFlow (<a href="https://www.tensorflow.org/">https://www.tensorflow.org/</a>)<a class="anchor-link" href="#PyTorch-(https://pytorch.org/)-or-TensorFlow-(https://www.tensorflow.org/)">&#182;</a></h3><p>PyTorch is the deep learning library underlying AllenNLP, so if you want to understand the "guts" of the (often byzantine) deep NLP methods in AllenNLP, PyTorch is where to start. TensorFlow is Google's competitor to PyTorch, and the two pretty much corner the market for Python deep learning tools.</p>
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13361,14 +13395,46 @@ Within social science, the most popular NLP technologies are:</li>
 
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="History-of-Text-Analysis-in-One-Slide">History of Text Analysis in One Slide<a class="anchor-link" href="#History-of-Text-Analysis-in-One-Slide">&#182;</a></h2><ol>
 <li>The olden days: <em>Feature Engineering</em></li>
-<li>The enlightenment: <em>Automagically-Learned Features</em></li>
 </ol>
+<table>
+<thead><tr>
+<th>Raw Text</th>
+<th>Feature 1: num_words</th>
+<th>Feature 2: baby_count</th>
+<th>Feature 3: has_emojis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>im baby</td>
+<td>2</td>
+<td>1</td>
+<td>False</td>
+</tr>
+<tr>
+<td>DaBaby's major-label debut, <em>Baby on Baby</em>, received a favorable 7.7 review from Pitchfork.</td>
+<td>13</td>
+<td>3</td>
+<td>False</td>
+</tr>
+<tr>
+<td>who else is BRAVE enough 2 say I ATTENDED Key West High School, Home of the Conchs, and I also PRAY FOR DEATH 😂 EVERY DAY! 😂</td>
+<td>27</td>
+<td>0</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>The [Deep] Enlightenment: <em>Automagically-Learned Features</em></li>
+</ol>
+<p><img src="deep_features.png" alt="deep_features.png"></p>
 
 </div>
 </div>
@@ -13429,11 +13495,18 @@ Within social science, the most popular NLP technologies are:</li>
 </tr>
 </tbody>
 </table>
-<p><img src="w2v_modified.jpg" alt="w2v"></p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="How-Humans-See-It">How Humans See It<a class="anchor-link" href="#How-Humans-See-It">&#182;</a></h2><p><img src="w2v_modified.jpg" alt="w2v"></p>
+
+</div>
+</div>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13444,7 +13517,7 @@ $$<p>where the vector on the right will be all zeros except for the slots corres
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13928,7 +14001,7 @@ C:\Users\jj\Anaconda3\lib\site-packages\matplotlib\backends\backend_agg.py:176: 
 </div>
 </div>
 
-</div></div></section></section>
+</div></section></section>
 </div>
 </div>
 
