@@ -1,50 +1,27 @@
-import logging
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-
+# This is just code we'll need later on, allowing us to generate a t-SNE plot 
+# (the "standard", though perhaps not best, way to visualize an embedding space)
 from sklearn.manifold import TSNE
+import pandas as pd
+import numpy as np
+import seaborn as sns
 import matplotlib.pyplot as plt
-
-from gensim.models import FastText
-
-import joblib
-
-contract_model = FastText.load("contracts_fasttext.model")
-
+%matplotlib inline
 def tsne_plot(model):
-    "Creates and TSNE model and plots it"
     labels = []
     tokens = []
-
     for word in model.wv.vocab:
-        tokens.append(model[word])
+        tokens.append(model.wv[word])
         labels.append(word)
-    
-    tsne_model = TSNE(perplexity=40, n_components=2, init='pca', n_iter=1000,
-                      verbose=5, random_state=23)
+    tsne_model = TSNE(perplexity=40, n_components=2, init="pca", n_iter=2000, random_state=1948)
     new_values = tsne_model.fit_transform(tokens)
-
-    joblib.dump(tsne_model, "tsne_model.scikit")
-    joblib.dump(new_values, "new_values.scikit")
-
-    #x = []
-    #y = []
-    #for value in new_values:
-    #    x.append(value[0])
-    #    y.append(value[1])
-    #    
-    #f = plt.figure(figsize=(16, 16)) 
-    #for i in range(len(x)):
-    #    plt.scatter(x[i],y[i])
-    #    plt.annotate(labels[i],
-    #                 xy=(x[i], y[i]),
-    #                 xytext=(5, 2),
-    #                 textcoords='offset points',
-    #                 ha='right',
-    #                 va='bottom')
-    #f.savefig("fasttext_f.pdf",bbox_inches='tight')
-    #plt.savefig("fasttext_plt.pdf",bbox_inches='tight')
-    #f.savefig("fasttext_f.png",bbox_inches='tight')
-    #plt.savefig("fasttext_plt.png",bbox_inches='tight')
-    #plt.show()
-
-tsne_plot(contract_model)
+    my_x = new_values[:,0]
+    my_y = new_values[:,1]
+    plt.figure(figsize=(32, 32))
+    a = pd.DataFrame({'x': my_x, 'y': my_y, 'val': labels})
+    a_sample = a.sample(1500)
+    counter = 0
+    for i, point in a_sample.iterrows():
+        plt.scatter(point['x'], point['y'])
+        plt.text(point['x']+.02, point['y'], str(point['val']), fontsize=8)
+        counter = counter + 1
+    plt.show()
